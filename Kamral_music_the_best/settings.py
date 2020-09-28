@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'crispy_forms',
+    'music',
 ]
 
 CRISPY_TEMPLATE_PACK='bootstrap4'
@@ -124,3 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 AUTH_USER_MODEL='users.CustomUser'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+MEDIA_URL='media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'

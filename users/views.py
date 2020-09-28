@@ -13,7 +13,3 @@ class SignUpView(CreateView):
     success_url = reverse_lazy('login')
     template_name = 'signup.html'
 
-
-
-class HomePageView(TemplateView):
-    template_name = 'home.html'
